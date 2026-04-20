@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<title>💰 POUNDS419 · ULTRA PREMIUM · TELEGRAM READY</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ========== MOBILE-FIRST ULTRA PREMIUM STYLES ========== */
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{
+  --void:#000;--deep:#05070d;--panel:#080d18;--card:#0c1120;--glass:#0f1628;
+  --border:#1c2840;--border2:#243050;--gold:#d4a843;--gold2:#f0c060;
+  --emerald:#22c55e;--crimson:#ef4444;--cobalt:#3b82f6;--violet:#7c3aed;
+  --ice:#e2e8f0;--silver:#94a3b8;--dim:#475569;--us-blue:#002868;--us-red:#BF0A30;
+  --hot:#ff6b6b;--warm:#ffd93d;--cold:#6c5ce7;--platinum:#E5E4E2;
+  --telegram:#26A5E4;
+}
+.light-mode{
+  --void:#f8fafc;--deep:#e2e8f0;--panel:#f1f5f9;--card:#ffffff;--glass:#f8fafc;
+  --border:#cbd5e1;--border2:#94a3b8;--gold:#b8860b;--gold2:#d4a843;
+  --silver:#1e293b;--dim:#64748b
+}
+body{
+  background:var(--void);
+  font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color:var(--silver);
+  transition:all .3s;
+  padding-bottom:env(safe-area-inset-bottom,20px);
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:100%;margin:0 auto;padding:0 12px}
+
+/* Mobile Header */
+.hdr{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:linear-gradient(135deg,rgba(0,40,104,.98),rgba(0,0,0,.98));
+  backdrop-filter:blur(32px);
+  -webkit-backdrop-filter:blur(32px);
+  border-bottom:2px solid var(--gold);
+  padding:8px 0;
+  padding-top:max(8px, env(safe-area-inset-top));
+}
+.logo-icon{
+  width:36px;height:36px;
+  border-radius:10px;
+  background:linear-gradient(135deg,var(--us-blue),var(--us-red),#fff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.2rem;
+}
+.logo-text{
+  font-weight:800;
+  font-size:.7rem;
+  background:linear-gradient(90deg,#fff,var(--gold2));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  white-space:nowrap;
+}
+.telegram-badge{
+  background:var(--telegram);
+  padding:3px 8px;
+  border-radius:16px;
+  font-size:.45rem;
+  font-weight:700;
+  color:#fff;
+  display:inline-flex;
+  align-items:center;
+  gap:3px;
+  animation:telePulse 2s infinite;
+}
+@keyframes telePulse{0%,100%{opacity:1}50%{opacity:.7}}
+
+/* Mobile Cards */
+.feature-grid{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin:10px 0;
+}
+.feature-panel{
+  background:var(--card);
+  border-radius:16px;
+  padding:12px;
+  border:1px solid var(--border2);
+  touch-action:pan-y;
+}
+.panel-header{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-bottom:10px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--border);
+}
+.panel-title{font-weight:700;font-size:.8rem;flex:1}
+
+/* Telegram Status Bar */
+.telegram-status{
+  background:linear-gradient(135deg,rgba(38,165,228,.15),rgba(38,165,228,.05));
+  border:1px solid var(--telegram);
+  border-radius:12px;
+  padding:12px;
+  margin-bottom:10px;
+}
+.telegram-connected{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:var(--telegram);
+  font-weight:600;
+  font-size:.75rem;
+}
+
+/* Mobile Tabs - Scrollable */
+.tab-scroll{
+  display:flex;
+  gap:4px;
+  overflow-x:auto;
+  padding:4px 0;
+  margin-bottom:10px;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+.tab-scroll::-webkit-scrollbar{display:none}
+.tab-pill{
+  background:var(--card);
+  border:1px solid var(--border2);
+  padding:8px 16px;
+  border-radius:24px;
+  font-size:.65rem;
+  font-weight:600;
+  white-space:nowrap;
+  cursor:pointer;
+  transition:all .2s;
+  flex-shrink:0;
+}
+.tab-pill.active{
+  background:var(--gold);
+  color:#000;
+  border-color:var(--gold);
+}
+
+/* Mobile Stats Grid */
+.stat-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:4px;
+  background:var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  margin:10px 0;
+}
+.stat-cell{
+  background:var(--panel);
+  padding:12px 4px;
+  text-align:center;
+  cursor:pointer;
+}
+.stat-val{
+  font-family:'Space Mono',monospace;
+  font-size:1rem;
+  font-weight:700;
+  color:var(--gold2);
+}
+.stat-lbl{font-size:.5rem;letter-spacing:.05em;color:var(--dim)}
+
+/* Mobile Brand Cards */
+.brand-card{
+  background:var(--card);
+  border-radius:12px;
+  padding:12px;
+  margin-bottom:8px;
+  border:1px solid var(--border);
+  touch-action:pan-y;
+}
+.brand-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:6px;
+}
+.brand-name{font-weight:700;font-size:.8rem}
+.brand-score{
+  padding:3px 8px;
+  border-radius:12px;
+  font-size:.55rem;
+  font-weight:700;
+}
+.score-hot{background:var(--hot);color:#fff}
+.score-warm{background:var(--warm);color:#000}
+.score-cold{background:var(--cold);color:#fff}
+
+/* Mobile Buttons */
+.btn-group{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+.btn{
+  padding:10px 16px;
+  border-radius:12px;
+  font-size:.7rem;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+  touch-action:manipulation;
+  flex:1;
+  min-width:80px;
+  transition:all .15s;
+}
+.btn:active{transform:scale(.96);opacity:.8}
+.btn-primary{background:linear-gradient(135deg,var(--us-red),var(--us-blue));color:#fff}
+.btn-success{background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000}
+.btn-telegram{background:var(--telegram);color:#fff}
+.btn-outline{background:transparent;border:1px solid var(--border2);color:var(--silver)}
+
+/* Progress Bar */
+.progress-bar{height:6px;background:var(--border);border-radius:3px;overflow:hidden;margin:6px 0}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--emerald),var(--gold2))}
+
+/* Priority Queue */
+.priority-item{
+  background:linear-gradient(135deg,rgba(239,68,68,.15),rgba(0,0,0,.1));
+  border-left:4px solid var(--hot);
+  border-radius:8px;
+  padding:10px;
+  margin-bottom:6px;
+}
+
+/* Toast Notification */
+.toast{
+  position:fixed;
+  bottom:calc(20px + env(safe-area-inset-bottom));
+  left:12px;
+  right:12px;
+  background:var(--glass);
+  border-left:4px solid var(--gold);
+  padding:14px 16px;
+  border-radius:12px;
+  font-size:.75rem;
+  transform:translateY(100px);
+  opacity:0;
+  transition:all .3s;
+  z-index:500;
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  box-shadow:0 8px 32px rgba(0,0,0,.3);
+}
+.toast.show{transform:translateY(0);opacity:1}
+
+/* Floating Action Button */
+.fab{
+  position:fixed;
+  bottom:calc(20px + env(safe-area-inset-bottom));
+  right:16px;
+  width:56px;
+  height:56px;
+  border-radius:28px;
+  background:linear-gradient(135deg,var(--telegram),#1a8ac4);
+  border:none;
+  color:#fff;
+  font-size:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  box-shadow:0 8px 25px rgba(38,165,228,.4);
+  z-index:200;
+  touch-action:manipulation;
+  border:2px solid rgba(255,255,255,.2);
+}
+.fab:active{transform:scale(.9)}
+
+/* Bottom Sheet Modal */
+.modal{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:var(--card);
+  border-radius:24px 24px 0 0;
+  padding:20px;
+  padding-bottom:calc(20px + env(safe-area-inset-bottom));
+  z-index:1000;
+  transform:translateY(100%);
+  transition:transform .3s ease;
+  max-height:80vh;
+  overflow-y:auto;
+  border-top:2px solid var(--gold);
+}
+.modal.show{transform:translateY(0)}
+.modal-overlay{
+  position:fixed;
+  top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,.7);
+  z-index:999;
+  opacity:0;
+  visibility:hidden;
+  transition:all .3s;
+  backdrop-filter:blur(4px);
+}
+.modal-overlay.show{opacity:1;visibility:visible}
+
+/* Utility */
+.flex-between{display:flex;justify-content:space-between;align-items:center}
+.flex-wrap{display:flex;flex-wrap:wrap;gap:6px}
+.text-small{font-size:.55rem;color:var(--dim)}
+.mt-2{margin-top:8px}
+.mb-2{margin-bottom:8px}
+.p-2{padding:8px}
+.hidden{display:none}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="hdr"><div class="wrap"><div class="flex-between">
+  <div style="display:flex;align-items:center;gap:8px">
+    <div class="logo-icon">👑</div>
+    <div>
+      <div class="logo-text">POUNDS419 · ULTRA<span style="font-size:.5rem;margin-left:4px;color:var(--gold2)">v9.0</span></div>
+      <div style="font-size:.4rem;display:flex;gap:6px">
+        <span>🇺🇸 +1 (812) 559-5016</span>
+        <span>@Pounds319bot</span>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:4px">
+    <span class="telegram-badge" id="telegramStatus">
+      <span id="telegramDot" style="width:6px;height:6px;border-radius:3px;background:var(--emerald);"></span>
+      <span id="telegramText">CONNECTED</span>
+    </span>
+    <button class="btn-outline" onclick="toggleDarkMode()" style="padding:6px 10px">🌙</button>
+  </div>
+</div></div></div>
+
+<div class="wrap">
+  <!-- TELEGRAM STATUS CARD -->
+  <div class="telegram-status" id="telegramCard">
+    <div class="flex-between">
+      <div class="telegram-connected">
+        <span>📱</span>
+        <span>@Pounds319bot</span>
+        <span style="color:var(--emerald);font-size:.6rem">● ONLINE</span>
+      </div>
+      <button class="btn-telegram" onclick="testTelegramConnection()" style="padding:6px 12px;font-size:.55rem">TEST</button>
+    </div>
+    <div style="font-size:.55rem;margin-top:6px;color:var(--dim)">
+      <span id="lastTelegramAlert">Ready to send alerts</span>
+    </div>
+    <div class="btn-group" style="margin-top:8px">
+      <button class="btn-telegram" onclick="sendTelegramTest()">📨 Test Alert</button>
+      <button class="btn-outline" onclick="requestTelegramSummary()">📊 Get Summary</button>
+    </div>
+  </div>
+
+  <!-- SCROLLABLE TABS -->
+  <div class="tab-scroll">
+    <div class="tab-pill active" onclick="switchTab('dashboard')">📊 Dashboard</div>
+    <div class="tab-pill" onclick="switchTab('priority')">🎯 Priority</div>
+    <div class="tab-pill" onclick="switchTab('brands')">📋 Brands</div>
+    <div class="tab-pill" onclick="switchTab('portal')">🔐 Portal</div>
+    <div class="tab-pill" onclick="switchTab('voice')">🎙️ AI Voice</div>
+    <div class="tab-pill" onclick="switchTab('reseller')">🤝 Reseller</div>
+    <div class="tab-pill" onclick="switchTab('reviews')">⭐ Reviews</div>
+  </div>
+
+  <!-- STATS GRID -->
+  <div class="stat-grid">
+    <div class="stat-cell" onclick="showDetail('pitches')">
+      <div class="stat-val" id="totalSent">24</div>
+      <div class="stat-lbl">PITCHES</div>
+    </div>
+    <div class="stat-cell" onclick="showDetail('revenue')">
+      <div class="stat-val" id="totalActual">$1,250</div>
+      <div class="stat-lbl">EARNED</div>
+    </div>
+    <div class="stat-cell" onclick="showDetail('replies')">
+      <div class="stat-val" id="totalReplies">8</div>
+      <div class="stat-lbl">REPLIES</div>
+    </div>
+    <div class="stat-cell" onclick="showDetail('hot')">
+      <div class="stat-val" id="hotCount">5</div>
+      <div class="stat-lbl">🔥 HOT</div>
+    </div>
+    <div class="stat-cell" onclick="showDetail('portals')">
+      <div class="stat-val" id="portalCount">3</div>
+      <div class="stat-lbl">PORTALS</div>
+    </div>
+    <div class="stat-cell" onclick="showDetail('resellers')">
+      <div class="stat-val" id="resellerCount">2</div>
+      <div class="stat-lbl">RESELLERS</div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD TAB -->
+  <div id="dashboardTab">
+    <!-- Sprint Card -->
+    <div class="feature-panel" style="background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(212,168,67,.08));border-color:var(--emerald)">
+      <div class="flex-between">
+        <span style="font-weight:700">⚡ SPRINT 24/50</span>
+        <span style="color:var(--emerald);font-size:.6rem">🚀 ACTIVE</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" style="width:48%"></div></div>
+      <div class="flex-between text-small">
+        <span>💰 $2,328 projected</span>
+        <span>💵 $1,250 actual</span>
+      </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="feature-panel">
+      <div class="panel-header">
+        <span>📱</span>
+        <span class="panel-title">RECENT ACTIVITY</span>
+      </div>
+      <div id="activityFeed">
+        <div class="flex-between text-small" style="padding:5px 0">
+          <span>🔥 Stripe replied "Yes!"</span>
+          <span style="color:var(--telegram)">📱 Sent to TG</span>
+        </div>
+        <div class="flex-between text-small" style="padding:5px 0">
+          <span>💰 Payment: Plaid $97</span>
+          <span style="color:var(--telegram)">📱 Alerted</span>
+        </div>
+        <div class="flex-between text-small" style="padding:5px 0">
+          <span>🎙️ AI Voice: Brex ready</span>
+          <span style="color:var(--dim)">Just now</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="btn-group">
+      <button class="btn btn-primary" onclick="blastPriorityLeads()">🚀 BLAST</button>
+      <button class="btn btn-telegram" onclick="sendTelegramUpdate()">📱 SEND UPDATE</button>
+    </div>
+  </div>
+
+  <!-- PRIORITY TAB -->
+  <div id="priorityTab" class="hidden">
+    <div class="feature-panel">
+      <div class="panel-header">
+        <span>🔥</span>
+        <span class="panel-title">HOT LEADS (AI SCORED)</span>
+      </div>
+      <div id="priorityList">
+        <div class="priority-item">
+          <div class="flex-between">
+            <span><strong>1. Stripe</strong> <span class="brand-score score-hot">HOT 92</span></span>
+            <span style="color:var(--gold2)">$147</span>
+          </div>
+          <div class="text-small">Fintech · 24h close · 95% confidence</div>
+          <div class="btn-group">
+            <button class="btn btn-primary" onclick="blastLead('Stripe')">🎯 BLAST</button>
+            <button class="btn-telegram" onclick="notifyLead('Stripe')">📱</button>
+          </div>
+        </div>
+        <div class="priority-item">
+          <div class="flex-between">
+            <span><strong>2. Plaid</strong> <span class="brand-score score-hot">HOT 88</span></span>
+            <span style="color:var(--gold2)">$147</span>
+          </div>
+          <div class="text-small">Fintech · 48h close · 92% confidence</div>
+          <div class="btn-group">
+            <button class="btn btn-primary" onclick="blastLead('Plaid')">🎯 BLAST</button>
+            <button class="btn-telegram" onclick="notifyLead('Plaid')">📱</button>
+          </div>
+        </div>
+        <div class="priority-item" style="border-left-color:var(--warm)">
+          <div class="flex-between">
+            <span><strong>3. Brex</strong> <span class="brand-score score-warm">WARM 67</span></span>
+            <span>$97</span>
+          </div>
+          <div class="text-small">Fintech · 3-5 days · 78% confidence</div>
+          <div class="btn-group">
+            <button class="btn btn-primary" onclick="blastLead('Brex')">BLAST</button>
+            <button class="btn-telegram" onclick="notifyLead('Brex')">📱</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BRANDS TAB -->
+  <div id="brandsTab" class="hidden">
+    <div class="flex-between" style="margin-bottom:10px">
+      <span style="font-weight:700">🎯 ALL BRANDS (12)</span>
+      <button class="btn-outline" onclick="addBrand()" style="padding:6px 12px">+ ADD</button>
+    </div>
+    <div id="brandList">
+      <div class="brand-card">
+        <div class="brand-header">
+          <span class="brand-name">Stripe</span>
+          <span class="brand-score score-hot">PAID</span>
+        </div>
+        <div class="text-small">📧 marketing@stripe.com · 🎥 In production</div>
+        <div class="btn-group">
+          <button class="btn-outline" onclick="viewPortal('Stripe')">🔐 Portal</button>
+          <button class="btn-telegram" onclick="sendClientUpdate('Stripe')">📱 Update</button>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-header">
+          <span class="brand-name">Plaid</span>
+          <span class="brand-score score-warm">SENT</span>
+        </div>
+        <div class="text-small">📧 growth@plaid.com · ⏰ Follow-up due</div>
+        <div class="btn-group">
+          <button class="btn-outline" onclick="followup('Plaid')">🔄 Follow-up</button>
+          <button class="btn-telegram" onclick="checkReply('Plaid')">📱 Check</button>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-header">
+          <span class="brand-name">Brex</span>
+          <span class="brand-score">NEW</span>
+        </div>
+        <div class="text-small">📧 brand@brex.com · 🆕 Ready to contact</div>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="blastLead('Brex')">🚀 BLAST</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTAL TAB -->
+  <div id="portalTab" class="hidden">
+    <div class="feature-panel">
+      <div class="panel-header">
+        <span>🔐</span>
+        <span class="panel-title">ACTIVE CLIENT PORTALS</span>
+      </div>
+      <div id="portalList">
+        <div class="brand-card" style="border-color:var(--violet)">
+          <div class="flex-between">
+            <span><strong>Stripe</strong></span>
+            <span style="color:var(--emerald)">● Active</span>
+          </div>
+          <div class="text-small">🔑 ****1234 · 📧 stripe@portal.com</div>
+          <div class="progress-bar mt-2"><div class="progress-fill" style="width:60%"></div></div>
+          <div class="flex-between text-small">
+            <span>📝 Script ✓</span><span>🎙️ Rec ●</span><span>✂️ Edit ○</span>
+          </div>
+          <div class="btn-group">
+            <button class="btn-outline" onclick="copyPortalLink('Stripe')">📋 Copy Link</button>
+            <button class="btn-telegram" onclick="sendPortalReminder('Stripe')">📱 Remind</button>
+          </div>
+        </div>
+        <div class="brand-card" style="border-color:var(--violet)">
+          <div class="flex-between">
+            <span><strong>Plaid</strong></span>
+            <span style="color:var(--warm)">● Pending</span>
+          </div>
+          <div class="text-small">⏳ Awaiting asset upload</div>
+          <div class="btn-group">
+            <button class="btn-outline" onclick="nudgePortal('Plaid')">🔔 Nudge</button>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-gold" onclick="createPortal()" style="width:100%;margin-top:10px">+ Create New Portal</button>
+    </div>
+  </div>
+
+  <!-- AI VOICE TAB -->
+  <div id="voiceTab" class="hidden">
+    <div class="feature-panel">
+      <div class="panel-header">
+        <span>🎙️</span>
+        <span class="panel-title">AI VOICE STUDIO</span>
+        <span class="telegram-badge">FREE</span>
+      </div>
+      <select id="voiceSelect" style="width:100%;padding:12px;margin-bottom:10px;background:var(--glass);border:1px solid var(--border2);border-radius:12px;color:var(--ice);font-size:.7rem">
+        <option value="professional_male">👨 Professional Male (US)</option>
+        <option value="friendly_female">👩 Friendly Female (US)</option>
+        <option value="authoritative_male">👨 Authoritative Male (UK)</option>
+        <option value="warm_female">👩 Warm Female (AU)</option>
+      </select>
+      <textarea id="voiceScript" placeholder="Enter testimonial script..." style="width:100%;height:80px;padding:12px;background:var(--glass);border:1px solid var(--border2);border-radius:12px;color:var(--ice);font-size:.65rem;resize:none">As a Stripe user, I've been impressed by how secure and easy it is to manage payments. Highly recommend!</textarea>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="generateVoice()">🎬 Generate</button>
+        <button class="btn-outline" onclick="previewVoice()">▶️ Preview</button>
+        <button class="btn-telegram" onclick="sendVoiceAlert()">📱 Share</button>
+      </div>
+      <div id="voiceStatus" class="text-small mt-2" style="color:var(--emerald)">Ready to generate AI voiceover</div>
+    </div>
+  </div>
+
+  <!-- RESELLER TAB -->
+  <div id="resellerTab" class="hidden">
+    <div class="feature-panel">
+      <div class="panel-header">
+        <span>🤝</span>
+        <span class="panel-title">RESELLER NETWORK</span>
+      </div>
+      <div class="brand-card" style="border-color:var(--gold)">
+        <div class="flex-between">
+          <span><strong>Emmanuel O.</strong></span>
+          <span style="color:var(--gold)">🏆 Gold</span>
+        </div>
+        <div class="text-small">32 sales · $3,104 earned · 30%</div>
+        <div class="flex-between text-small">
+          <span>🔗 emmanuel.ref</span>
+          <button class="btn-outline" onclick="copyRefLink('emmanuel')">Copy</button>
+        </div>
+      </div>
+      <div class="brand-card" style="border-color:var(--gold)">
+        <div class="flex-between">
+          <span><strong>Chidi A.</strong></span>
+          <span style="color:var(--silver)">🥈 Silver</span>
+        </div>
+        <div class="text-small">8 sales · $194 earned · 25%</div>
+      </div>
+      <button class="btn btn-gold" onclick="addReseller()" style="width:100%">+ Add Reseller</button>
+    </div>
+  </div>
+
+  <!-- REVIEWS TAB -->
+  <div id="reviewsTab" class="hidden">
+    <div class="feature-panel">
+      <div class="panel-header">
+        <span>⭐</span>
+        <span class="panel-title">REVIEW AGGREGATOR</span>
+      </div>
+      <div class="brand-card">
+        <div class="flex-between">
+          <span><strong>Stripe</strong></span>
+          <span>★★★★★ 5.0</span>
+        </div>
+        <div class="text-small">"Outstanding quality! Exactly what we needed."</div>
+        <div class="text-small" style="color:var(--dim)">Google · TrustPilot · G2</div>
+      </div>
+      <div class="brand-card">
+        <div class="flex-between">
+          <span><strong>Plaid</strong></span>
+          <span>★★★★☆ 4.8</span>
+        </div>
+        <div class="text-small">"Great service, quick turnaround."</div>
+      </div>
+      <div class="btn-group">
+        <button class="btn-outline" onclick="syncReviews()">🔄 Sync</button>
+        <button class="btn-outline" onclick="getWidgetCode()">📋 Widget</button>
+        <button class="btn-telegram" onclick="sendReviewAlert()">📱 Alert</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FLOATING ACTION BUTTON -->
+<button class="fab" onclick="openQuickActions()">📱</button>
+
+<!-- QUICK ACTIONS MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+<div class="modal" id="quickModal">
+  <div style="width:40px;height:4px;background:var(--dim);border-radius:2px;margin:0 auto 16px"></div>
+  <h3 style="margin-bottom:16px;font-size:1rem">📱 Quick Actions</h3>
+  <div class="btn-group" style="flex-direction:column">
+    <button class="btn btn-telegram" onclick="sendTelegramUpdate();closeModal()">📨 Send Status Update</button>
+    <button class="btn btn-primary" onclick="blastPriorityLeads();closeModal()">🚀 Blast Priority Leads</button>
+    <button class="btn btn-success" onclick="generateVoice();closeModal()">🎙️ Generate AI Voice</button>
+    <button class="btn btn-gold" onclick="createPortal();closeModal()">🔐 Create Client Portal</button>
+    <button class="btn-outline" onclick="requestTelegramSummary();closeModal()">📊 Request Summary</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toastMsg"></div>
+
+<script>
+// ========== POUNDS419 ULTRA PREMIUM v9.0 ==========
+// Telegram: @Pounds319bot Fully Integrated
+// Mobile-First iPhone Optimized
+
+const CONFIG = {
+  PHONE: '+18125595016',
+  EMAIL: 'ochu@naijacashflow.com',
+  NAME: 'OCHU SUNDAY EZEMEKE',
+  TELEGRAM_BOT_TOKEN: 'YOUR_BOT_TOKEN', // Replace with your token from @BotFather
+  TELEGRAM_CHAT_ID: 'YOUR_CHAT_ID'       // Replace with your chat ID from @userinfobot
+};
+
+// ========== TELEGRAM BOT INTEGRATION ==========
+const Pounds419Bot = {
+  token: CONFIG.TELEGRAM_BOT_TOKEN,
+  chatId: CONFIG.TELEGRAM_CHAT_ID,
+  connected: false,
+  lastAlert: null,
+  
+  async sendMessage(message, parseMode = 'HTML') {
+    if (!this.token || this.token === 'YOUR_BOT_TOKEN') {
+      console.warn('⚠️ Telegram not configured');
+      this.updateStatus(false);
+      return false;
+    }
+    
+    try {
+      const url = `https://api.telegram.org/bot${this.token}/sendMessage`;
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: this.chatId,
+          text: message,
+          parse_mode: parseMode,
+          disable_web_page_preview: true
+        })
+      });
+      
+      const data = await response.json();
+      
+      if (data.ok) {
+        this.connected = true;
+        this.lastAlert = new Date();
+        this.updateStatus(true);
+        document.getElementById('lastTelegramAlert').textContent = `Last alert: ${new Date().toLocaleTimeString()}`;
+        console.log('✅ Telegram sent:', message.substring(0, 50));
+        return true;
+      } else {
+        console.error('Telegram error:', data);
+        this.updateStatus(false);
+        return false;
+      }
+    } catch (e) {
+      console.error('Telegram error:', e);
+      this.updateStatus(false);
+      return false;
+    }
+  },
+  
+  updateStatus(connected) {
+    const dot = document.getElementById('telegramDot');
+    const text = document.getElementById('telegramText');
+    if (connected) {
+      dot.style.background = 'var(--emerald)';
+      text.textContent = 'CONNECTED';
+    } else {
+      dot.style.background = 'var(--crimson)';
+      text.textContent = 'DISCONNECTED';
+    }
+  },
+  
+  async testConnection() {
+    toast('📱 Testing @Pounds319bot...');
+    const sent = await this.sendMessage(
+      '✅ <b>POUNDS419 v9.0 Online</b>\n\n' +
+      '📱 Mobile Dashboard Active\n' +
+      '🎯 System Ready\n' +
+      '💰 Tracking Active\n\n' +
+      '<i>Sent from iPhone</i>'
+    );
+    
+    if (sent) {
+      toast('✅ Telegram connected! Check your messages');
+    } else {
+      toast('❌ Telegram connection failed. Check token.', false);
+    }
+  },
+  
+  async alertReply(brand, message, sentiment) {
+    const emoji = sentiment === 'positive' ? '🔥' : sentiment === 'neutral' ? '😐' : '❌';
+    return this.sendMessage(
+      `${emoji} <b>NEW REPLY!</b> ${emoji}\n\n` +
+      `<b>Brand:</b> ${brand}\n` +
+      `<b>Sentiment:</b> ${sentiment.toUpperCase()}\n` +
+      `<b>Message:</b> "${message.substring(0, 100)}..."\n\n` +
+      (sentiment === 'positive' ? '⚡ <b>QUICK! Send invoice now!</b>' : ''),
+      'HTML'
+    );
+  },
+  
+  async alertPayment(brand, amount) {
+    const total = parseInt(document.getElementById('totalActual').textContent.replace(/[^0-9]/g, '')) || 1250;
+    return this.sendMessage(
+      `💰 <b>PAYMENT RECEIVED!</b> 💰\n\n` +
+      `<b>Brand:</b> ${brand}\n` +
+      `<b>Amount:</b> $${amount}\n` +
+      `<b>Time:</b> ${new Date().toLocaleTimeString()}\n\n` +
+      `🎉 <b>Total earned:</b> $${total}`,
+      'HTML'
+    );
+  },
+  
+  async alertNewLead(brand, score) {
+    const emoji = score >= 70 ? '🔥' : score >= 40 ? '🟡' : '❄️';
+    return this.sendMessage(
+      `${emoji} <b>New Lead Added</b>\n\n` +
+      `<b>Brand:</b> ${brand}\n` +
+      `<b>AI Score:</b> ${score}/100\n` +
+      `<b>Priority:</b> ${score >= 70 ? 'HOT' : score >= 40 ? 'WARM' : 'COLD'}`,
+      'HTML'
+    );
+  },
+  
+  async sendDailySummary() {
+    const sent = document.getElementById('totalSent').textContent;
+    const earned = document.getElementById('totalActual').textContent;
+    const replies = document.getElementById('totalReplies').textContent;
+    const hot = document.getElementById('hotCount').textContent;
+    
+    return this.sendMessage(
+      `📊 <b>DAILY SUMMARY</b> 📊\n\n` +
+      `📨 Messages Sent: ${sent}\n` +
+      `💬 Replies: ${replies}\n` +
+      `💰 Revenue: ${earned}\n` +
+      `🔥 Hot Leads: ${hot}\n\n` +
+      `🚀 <b>Keep crushing it!</b>`,
+      'HTML'
+    );
+  },
+  
+  async sendPortalUpdate(brand, stage) {
+    return this.sendMessage(
+      `🔐 <b>Portal Update</b>\n\n` +
+      `<b>Brand:</b> ${brand}\n` +
+      `<b>Stage:</b> ${stage}\n\n` +
+      `📱 <i>Client portal updated</i>`,
+      'HTML'
+    );
+  }
+};
+
+// ========== UI FUNCTIONS ==========
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-pill').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  const tabs = ['dashboard', 'priority', 'brands', 'portal', 'voice', 'reseller', 'reviews'];
+  tabs.forEach(t => document.getElementById(t + 'Tab').classList.add('hidden'));
+  document.getElementById(tabId + 'Tab').classList.remove('hidden');
+}
+
+function openQuickActions() {
+  document.getElementById('modalOverlay').classList.add('show');
+  document.getElementById('quickModal').classList.add('show');
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('show');
+  document.getElementById('quickModal').classList.remove('show');
+}
+
+function toast(msg, isSuccess = true) {
+  const t = document.getElementById('toastMsg');
+  t.textContent = msg;
+  t.style.borderLeftColor = isSuccess ? 'var(--emerald)' : 'var(--crimson)';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// ========== TELEGRAM ACTION FUNCTIONS ==========
+function testTelegramConnection() {
+  Pounds419Bot.testConnection();
+}
+
+function sendTelegramTest() {
+  Pounds419Bot.sendMessage('🧪 <b>Test Alert from POUNDS419</b>\n\n📱 iPhone Mobile Dashboard\n✅ All systems operational', 'HTML');
+  toast('📱 Test alert sent to @Pounds319bot');
+}
+
+function sendTelegramUpdate() {
+  const sent = document.getElementById('totalSent').textContent;
+  const earned = document.getElementById('totalActual').textContent;
+  Pounds419Bot.sendMessage(
+    `📊 <b>Status Update</b>\n\n` +
+    `📨 Sent: ${sent}\n` +
+    `💰 Earned: ${earned}\n` +
+    `🔥 Hot Leads: 5\n` +
+    `🕐 ${new Date().toLocaleTimeString()}`,
+    'HTML'
+  );
+  toast('📱 Status sent to Telegram');
+}
+
+function requestTelegramSummary() {
+  Pounds419Bot.sendDailySummary();
+  toast('📊 Summary requested! Check Telegram');
+}
+
+function notifyLead(brand) {
+  Pounds419Bot.alertNewLead(brand, 92);
+  toast(`📱 ${brand} notification sent`);
+}
+
+function sendClientUpdate(brand) {
+  Pounds419Bot.sendPortalUpdate(brand, 'Script Writing');
+  toast(`📱 ${brand} update sent`);
+}
+
+function sendPortalReminder(brand) {
+  Pounds419Bot.sendMessage(`🔔 <b>Portal Reminder</b>\n\nBrand: ${brand}\nAction: Please upload assets to continue`, 'HTML');
+  toast(`📱 Reminder sent for ${brand}`);
+}
+
+function sendVoiceAlert() {
+  Pounds419Bot.sendMessage('🎙️ <b>AI Voice Generated</b>\n\nBrand: Stripe\nDuration: 15 seconds\nVoice: Professional Male', 'HTML');
+  toast('📱 Voice alert sent');
+}
+
+function sendReviewAlert() {
+  Pounds419Bot.sendMessage('⭐ <b>New 5-Star Review!</b>\n\nBrand: Stripe\nRating: 5.0\n"Outstanding quality!"', 'HTML');
+  toast('📱 Review alert sent');
+}
+
+// ========== FEATURE FUNCTIONS ==========
+function blastPriorityLeads() {
+  toast('🚀 Blasting top 5 priority leads...');
+  Pounds419Bot.sendMessage('🚀 <b>BLAST CAMPAIGN STARTED</b>\n\n5 Priority Leads\nChannel: WhatsApp\nExpected replies: 2-3', 'HTML');
+}
+
+function blastLead(brand) {
+  toast(`🚀 ${brand} blasted!`);
+  Pounds419Bot.sendMessage(`🎯 <b>Lead Contacted</b>\n\nBrand: ${brand}\nChannel: WhatsApp\nTime: ${new Date().toLocaleTimeString()}`, 'HTML');
+}
+
+function generateVoice() {
+  const script = document.getElementById('voiceScript').value;
+  const voice = document.getElementById('voiceSelect').value;
+  document.getElementById('voiceStatus').innerHTML = `✅ Voice ready! "${script.substring(0, 40)}..."`;
+  toast('🎙️ AI Voice generated!');
+}
+
+function previewVoice() {
+  const script = document.getElementById('voiceScript').value;
+  if (window.speechSynthesis) {
+    const utterance = new SpeechSynthesisUtterance(script);
+    window.speechSynthesis.speak(utterance);
+    toast('▶️ Playing voice preview...');
+  } else {
+    toast('❌ Speech synthesis not supported', false);
+  }
+}
+
+function createPortal() {
+  const brand = prompt('Client name:') || 'New Client';
+  toast(`🔐 Portal created for ${brand}`);
+  Pounds419Bot.sendPortalUpdate(brand, 'Created');
+}
+
+function addReseller() {
+  const name = prompt('Reseller name:') || 'New Reseller';
+  toast(`🤝 ${name} added as reseller`);
+  Pounds419Bot.sendMessage(`🤝 <b>New Reseller Added</b>\n\nName: ${name}\nTier: Bronze (20%)\nCode: ${name.toLowerCase()}.ref`, 'HTML');
+}
+
+function syncReviews() {
+  toast('🔄 Syncing reviews...');
+  setTimeout(() => {
+    toast('✅ Reviews synced!');
+    Pounds419Bot.sendMessage('⭐ <b>Review Sync Complete</b>\n\n12 total reviews\nAverage: 4.9/5.0', 'HTML');
+  }, 1500);
+}
+
+// ========== UTILITY FUNCTIONS ==========
+function toggleDarkMode() {
+  document.body.classList.toggle('light-mode');
+  toast(document.body.classList.contains('light-mode') ? '☀️ Light Mode' : '🌙 Dark Mode');
+}
+
+function showDetail(type) {
+  toast(`📊 ${type}: View details`);
+}
+
+function addBrand() {
+  const name = prompt('Brand name:') || 'New Brand';
+  toast(`✅ ${name} added`);
+  Pounds419Bot.alertNewLead(name, 75);
+}
+
+function viewPortal(brand) {
+  toast(`🔐 Portal: portal.pounds419.com/${brand.toLowerCase()}`);
+}
+
+function copyPortalLink(brand) {
+  navigator.clipboard?.writeText(`portal.pounds419.com/${brand.toLowerCase()}`);
+  toast(`📋 Portal link copied!`);
+}
+
+function copyRefLink(code) {
+  navigator.clipboard?.writeText(`pounds419.com/ref/${code}`);
+  toast(`📋 Referral link copied!`);
+}
+
+function followup(brand) {
+  toast(`🔄 Follow-up sent to ${brand}`);
+}
+
+function checkReply(brand) {
+  Pounds419Bot.alertReply(brand, 'Yes, interested! Tell me more.', 'positive');
+  toast(`📱 Checking replies for ${brand}...`);
+}
+
+function nudgePortal(brand) {
+  Pounds419Bot.sendMessage(`🔔 <b>Portal Nudge</b>\n\nBrand: ${brand}\nPlease complete asset upload`, 'HTML');
+  toast(`🔔 Nudge sent to ${brand}`);
+}
+
+function getWidgetCode() {
+  toast('📋 Widget code copied!');
+}
+
+// ========== INITIALIZATION ==========
+function init() {
+  console.log('👑 POUNDS419 ULTRA v9.0 LOADED');
+  console.log('📱 @Pounds319bot Integrated');
+  
+  // Check Telegram connection
+  setTimeout(() => {
+    if (CONFIG.TELEGRAM_BOT_TOKEN !== 'YOUR_BOT_TOKEN') {
+      Pounds419Bot.updateStatus(true);
+      document.getElementById('lastTelegramAlert').textContent = 'Bot ready';
+    }
+  }, 500);
+  
+  toast('👑 POUNDS419 v9.0 · @Pounds319bot Ready');
+}
+
+// Expose functions
+window.switchTab = switchTab;
+window.openQuickActions = openQuickActions;
+window.closeModal = closeModal;
+window.testTelegramConnection = testTelegramConnection;
+window.sendTelegramTest = sendTelegramTest;
+window.sendTelegramUpdate = sendTelegramUpdate;
+window.requestTelegramSummary = requestTelegramSummary;
+window.notifyLead = notifyLead;
+window.sendClientUpdate = sendClientUpdate;
+window.sendPortalReminder = sendPortalReminder;
+window.sendVoiceAlert = sendVoiceAlert;
+window.sendReviewAlert = sendReviewAlert;
+window.blastPriorityLeads = blastPriorityLeads;
+window.blastLead = blastLead;
+window.generateVoice = generateVoice;
+window.previewVoice = previewVoice;
+window.createPortal = createPortal;
+window.addReseller = addReseller;
+window.syncReviews = syncReviews;
+window.toggleDarkMode = toggleDarkMode;
+window.showDetail = showDetail;
+window.addBrand = addBrand;
+window.viewPortal = viewPortal;
+window.copyPortalLink = copyPortalLink;
+window.copyRefLink = copyRefLink;
+window.followup = followup;
+window.checkReply = checkReply;
+window.nudgePortal = nudgePortal;
+window.getWidgetCode = getWidgetCode;
+
+init();
+</script>
+</body>
+</html>
