@@ -681,7 +681,7 @@ body{
 // Telegram: @Pounds319bot Fully Integrated
 // Mobile-First iPhone Optimized
 
-const const CONFIG = {
+const CONFIG = {
   PHONE: '+18125595016',
   EMAIL: 'info@naijacashflow.com',
   NAME: 'EZEFABULOUS Meshchain.Ai',
@@ -739,11 +739,14 @@ const Pounds419Bot = {
   updateStatus(connected) {
     const dot = document.getElementById('telegramDot');
     const text = document.getElementById('telegramText');
+    const lastAlert = document.getElementById('lastTelegramAlert');
     if (dot && text) {
       dot.style.background = connected ? '#22c55e' : '#ef4444';
       text.textContent = connected ? 'CONNECTED' : 'DISCONNECTED';
     }
-    document.getElementById('lastTelegramAlert').textContent = connected ? 'Ready to send alerts' : 'Configure Telegram';
+    if (lastAlert) {
+      lastAlert.textContent = connected ? 'Ready to send alerts' : 'Configure Telegram';
+    }
   },
   
   async testConnection() {
@@ -754,8 +757,7 @@ const Pounds419Bot = {
       toast('❌ Telegram connection failed', false);
     }
     return sent;
-  }
-};
+  },
   
   async alertReply(brand, message, sentiment) {
     const emoji = sentiment === 'positive' ? '🔥' : sentiment === 'neutral' ? '😐' : '❌';
