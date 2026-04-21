@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no">
-<title>💰 POUNDS419 · ULTRA PREMIUM · TELEGRAM READY</title>
+<title>💰 POUNDS419 · LIVE MONEY MACHINE</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 /* ========== MOBILE-FIRST ULTRA PREMIUM STYLES ========== */
@@ -328,7 +328,7 @@ body{
   <div style="display:flex;align-items:center;gap:8px">
     <div class="logo-icon">👑</div>
     <div>
-      <div class="logo-text">POUNDS419 · ULTRA<span style="font-size:.5rem;margin-left:4px;color:var(--gold2)">v9.0</span></div>
+      <div class="logo-text">POUNDS419 · LIVE<span style="font-size:.5rem;margin-left:4px;color:var(--gold2)">v10.0</span></div>
       <div style="font-size:.4rem;display:flex;gap:6px">
         <span>🇺🇸 +1 (812) 559-5016</span>
         <span>@Pounds319bot</span>
@@ -378,27 +378,27 @@ body{
   <!-- STATS GRID -->
   <div class="stat-grid">
     <div class="stat-cell" onclick="showDetail('pitches')">
-      <div class="stat-val" id="totalSent">24</div>
+      <div class="stat-val" id="totalSent">0</div>
       <div class="stat-lbl">PITCHES</div>
     </div>
     <div class="stat-cell" onclick="showDetail('revenue')">
-      <div class="stat-val" id="totalActual">$1,250</div>
+      <div class="stat-val" id="totalActual">$0</div>
       <div class="stat-lbl">EARNED</div>
     </div>
     <div class="stat-cell" onclick="showDetail('replies')">
-      <div class="stat-val" id="totalReplies">8</div>
+      <div class="stat-val" id="totalReplies">0</div>
       <div class="stat-lbl">REPLIES</div>
     </div>
     <div class="stat-cell" onclick="showDetail('hot')">
-      <div class="stat-val" id="hotCount">5</div>
+      <div class="stat-val" id="hotCount">0</div>
       <div class="stat-lbl">🔥 HOT</div>
     </div>
     <div class="stat-cell" onclick="showDetail('portals')">
-      <div class="stat-val" id="portalCount">3</div>
+      <div class="stat-val" id="portalCount">0</div>
       <div class="stat-lbl">PORTALS</div>
     </div>
     <div class="stat-cell" onclick="showDetail('resellers')">
-      <div class="stat-val" id="resellerCount">2</div>
+      <div class="stat-val" id="resellerCount">0</div>
       <div class="stat-lbl">RESELLERS</div>
     </div>
   </div>
@@ -408,13 +408,13 @@ body{
     <!-- Sprint Card -->
     <div class="feature-panel" style="background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(212,168,67,.08));border-color:var(--emerald)">
       <div class="flex-between">
-        <span style="font-weight:700">⚡ SPRINT 24/50</span>
-        <span style="color:var(--emerald);font-size:.6rem">🚀 ACTIVE</span>
+        <span style="font-weight:700">⚡ SPRINT <span id="sprintSent">0</span>/<span id="sprintTarget">50</span></span>
+        <span style="color:var(--emerald);font-size:.6rem" id="sprintStatus">🚀 READY</span>
       </div>
-      <div class="progress-bar"><div class="progress-fill" style="width:48%"></div></div>
+      <div class="progress-bar"><div class="progress-fill" id="sprintProgress" style="width:0%"></div></div>
       <div class="flex-between text-small">
-        <span>💰 $2,328 projected</span>
-        <span>💵 $1,250 actual</span>
+        <span>💰 $<span id="todayProjected">0</span> projected</span>
+        <span>💵 $<span id="todayActualDisplay">0</span> actual</span>
       </div>
     </div>
 
@@ -425,18 +425,7 @@ body{
         <span class="panel-title">RECENT ACTIVITY</span>
       </div>
       <div id="activityFeed">
-        <div class="flex-between text-small" style="padding:5px 0">
-          <span>🔥 Stripe replied "Yes!"</span>
-          <span style="color:var(--telegram)">📱 Sent to TG</span>
-        </div>
-        <div class="flex-between text-small" style="padding:5px 0">
-          <span>💰 Payment: Plaid $97</span>
-          <span style="color:var(--telegram)">📱 Alerted</span>
-        </div>
-        <div class="flex-between text-small" style="padding:5px 0">
-          <span>🎙️ AI Voice: Brex ready</span>
-          <span style="color:var(--dim)">Just now</span>
-        </div>
+        <div class="text-small" style="padding:5px 0;color:var(--dim)">No activity yet. Start blasting!</div>
       </div>
     </div>
 
@@ -455,39 +444,7 @@ body{
         <span class="panel-title">HOT LEADS (AI SCORED)</span>
       </div>
       <div id="priorityList">
-        <div class="priority-item">
-          <div class="flex-between">
-            <span><strong>1. Stripe</strong> <span class="brand-score score-hot">HOT 92</span></span>
-            <span style="color:var(--gold2)">$147</span>
-          </div>
-          <div class="text-small">Fintech · 24h close · 95% confidence</div>
-          <div class="btn-group">
-            <button class="btn btn-primary" onclick="blastLead('Stripe')">🎯 BLAST</button>
-            <button class="btn-telegram" onclick="notifyLead('Stripe')">📱</button>
-          </div>
-        </div>
-        <div class="priority-item">
-          <div class="flex-between">
-            <span><strong>2. Plaid</strong> <span class="brand-score score-hot">HOT 88</span></span>
-            <span style="color:var(--gold2)">$147</span>
-          </div>
-          <div class="text-small">Fintech · 48h close · 92% confidence</div>
-          <div class="btn-group">
-            <button class="btn btn-primary" onclick="blastLead('Plaid')">🎯 BLAST</button>
-            <button class="btn-telegram" onclick="notifyLead('Plaid')">📱</button>
-          </div>
-        </div>
-        <div class="priority-item" style="border-left-color:var(--warm)">
-          <div class="flex-between">
-            <span><strong>3. Brex</strong> <span class="brand-score score-warm">WARM 67</span></span>
-            <span>$97</span>
-          </div>
-          <div class="text-small">Fintech · 3-5 days · 78% confidence</div>
-          <div class="btn-group">
-            <button class="btn btn-primary" onclick="blastLead('Brex')">BLAST</button>
-            <button class="btn-telegram" onclick="notifyLead('Brex')">📱</button>
-          </div>
-        </div>
+        <div class="text-small" style="color:var(--dim);text-align:center;padding:20px">Add brands to see priority leads</div>
       </div>
     </div>
   </div>
@@ -495,42 +452,15 @@ body{
   <!-- BRANDS TAB -->
   <div id="brandsTab" class="hidden">
     <div class="flex-between" style="margin-bottom:10px">
-      <span style="font-weight:700">🎯 ALL BRANDS (12)</span>
-      <button class="btn-outline" onclick="addBrand()" style="padding:6px 12px">+ ADD</button>
+      <span style="font-weight:700">🎯 ALL BRANDS (<span id="brandCount">0</span>)</span>
+      <div class="flex-wrap">
+        <button class="btn-outline" onclick="addBrand()" style="padding:6px 12px">+ ADD</button>
+        <button class="btn-outline" onclick="addSampleBrands()" style="padding:6px 12px">+10 HOT</button>
+        <button class="btn-outline" onclick="clearAllBrands()" style="padding:6px 12px">🗑️ Clear</button>
+      </div>
     </div>
     <div id="brandList">
-      <div class="brand-card">
-        <div class="brand-header">
-          <span class="brand-name">Stripe</span>
-          <span class="brand-score score-hot">PAID</span>
-        </div>
-        <div class="text-small">📧 marketing@stripe.com · 🎥 In production</div>
-        <div class="btn-group">
-          <button class="btn-outline" onclick="viewPortal('Stripe')">🔐 Portal</button>
-          <button class="btn-telegram" onclick="sendClientUpdate('Stripe')">📱 Update</button>
-        </div>
-      </div>
-      <div class="brand-card">
-        <div class="brand-header">
-          <span class="brand-name">Plaid</span>
-          <span class="brand-score score-warm">SENT</span>
-        </div>
-        <div class="text-small">📧 growth@plaid.com · ⏰ Follow-up due</div>
-        <div class="btn-group">
-          <button class="btn-outline" onclick="followup('Plaid')">🔄 Follow-up</button>
-          <button class="btn-telegram" onclick="checkReply('Plaid')">📱 Check</button>
-        </div>
-      </div>
-      <div class="brand-card">
-        <div class="brand-header">
-          <span class="brand-name">Brex</span>
-          <span class="brand-score">NEW</span>
-        </div>
-        <div class="text-small">📧 brand@brex.com · 🆕 Ready to contact</div>
-        <div class="btn-group">
-          <button class="btn btn-primary" onclick="blastLead('Brex')">🚀 BLAST</button>
-        </div>
-      </div>
+      <div class="text-small" style="color:var(--dim);text-align:center;padding:20px">No brands yet. Tap + ADD to start!</div>
     </div>
   </div>
 
@@ -542,31 +472,7 @@ body{
         <span class="panel-title">ACTIVE CLIENT PORTALS</span>
       </div>
       <div id="portalList">
-        <div class="brand-card" style="border-color:var(--violet)">
-          <div class="flex-between">
-            <span><strong>Stripe</strong></span>
-            <span style="color:var(--emerald)">● Active</span>
-          </div>
-          <div class="text-small">🔑 ****1234 · 📧 stripe@portal.com</div>
-          <div class="progress-bar mt-2"><div class="progress-fill" style="width:60%"></div></div>
-          <div class="flex-between text-small">
-            <span>📝 Script ✓</span><span>🎙️ Rec ●</span><span>✂️ Edit ○</span>
-          </div>
-          <div class="btn-group">
-            <button class="btn-outline" onclick="copyPortalLink('Stripe')">📋 Copy Link</button>
-            <button class="btn-telegram" onclick="sendPortalReminder('Stripe')">📱 Remind</button>
-          </div>
-        </div>
-        <div class="brand-card" style="border-color:var(--violet)">
-          <div class="flex-between">
-            <span><strong>Plaid</strong></span>
-            <span style="color:var(--warm)">● Pending</span>
-          </div>
-          <div class="text-small">⏳ Awaiting asset upload</div>
-          <div class="btn-group">
-            <button class="btn-outline" onclick="nudgePortal('Plaid')">🔔 Nudge</button>
-          </div>
-        </div>
+        <div class="text-small" style="color:var(--dim);text-align:center;padding:20px">No active portals. Mark a brand as PAID to create one!</div>
       </div>
       <button class="btn btn-gold" onclick="createPortal()" style="width:100%;margin-top:10px">+ Create New Portal</button>
     </div>
@@ -586,7 +492,7 @@ body{
         <option value="authoritative_male">👨 Authoritative Male (UK)</option>
         <option value="warm_female">👩 Warm Female (AU)</option>
       </select>
-      <textarea id="voiceScript" placeholder="Enter testimonial script..." style="width:100%;height:80px;padding:12px;background:var(--glass);border:1px solid var(--border2);border-radius:12px;color:var(--ice);font-size:.65rem;resize:none">As a Stripe user, I've been impressed by how secure and easy it is to manage payments. Highly recommend!</textarea>
+      <textarea id="voiceScript" placeholder="Enter testimonial script..." style="width:100%;height:80px;padding:12px;background:var(--glass);border:1px solid var(--border2);border-radius:12px;color:var(--ice);font-size:.65rem;resize:none">I've been using this service and it's absolutely incredible. The quality and speed exceeded my expectations. Highly recommend!</textarea>
       <div class="btn-group">
         <button class="btn btn-primary" onclick="generateVoice()">🎬 Generate</button>
         <button class="btn-outline" onclick="previewVoice()">▶️ Preview</button>
@@ -603,25 +509,10 @@ body{
         <span>🤝</span>
         <span class="panel-title">RESELLER NETWORK</span>
       </div>
-      <div class="brand-card" style="border-color:var(--gold)">
-        <div class="flex-between">
-          <span><strong>Emmanuel O.</strong></span>
-          <span style="color:var(--gold)">🏆 Gold</span>
-        </div>
-        <div class="text-small">32 sales · $3,104 earned · 30%</div>
-        <div class="flex-between text-small">
-          <span>🔗 emmanuel.ref</span>
-          <button class="btn-outline" onclick="copyRefLink('emmanuel')">Copy</button>
-        </div>
+      <div id="resellerList">
+        <div class="text-small" style="color:var(--dim);text-align:center;padding:20px">No resellers yet. Add your first partner!</div>
       </div>
-      <div class="brand-card" style="border-color:var(--gold)">
-        <div class="flex-between">
-          <span><strong>Chidi A.</strong></span>
-          <span style="color:var(--silver)">🥈 Silver</span>
-        </div>
-        <div class="text-small">8 sales · $194 earned · 25%</div>
-      </div>
-      <button class="btn btn-gold" onclick="addReseller()" style="width:100%">+ Add Reseller</button>
+      <button class="btn btn-gold" onclick="addReseller()" style="width:100%;margin-top:10px">+ Add Reseller</button>
     </div>
   </div>
 
@@ -632,20 +523,8 @@ body{
         <span>⭐</span>
         <span class="panel-title">REVIEW AGGREGATOR</span>
       </div>
-      <div class="brand-card">
-        <div class="flex-between">
-          <span><strong>Stripe</strong></span>
-          <span>★★★★★ 5.0</span>
-        </div>
-        <div class="text-small">"Outstanding quality! Exactly what we needed."</div>
-        <div class="text-small" style="color:var(--dim)">Google · TrustPilot · G2</div>
-      </div>
-      <div class="brand-card">
-        <div class="flex-between">
-          <span><strong>Plaid</strong></span>
-          <span>★★★★☆ 4.8</span>
-        </div>
-        <div class="text-small">"Great service, quick turnaround."</div>
+      <div id="reviewList">
+        <div class="text-small" style="color:var(--dim);text-align:center;padding:20px">No reviews yet. Complete a delivery to collect reviews!</div>
       </div>
       <div class="btn-group">
         <button class="btn-outline" onclick="syncReviews()">🔄 Sync</button>
@@ -677,17 +556,29 @@ body{
 <div class="toast" id="toastMsg"></div>
 
 <script>
-// ========== POUNDS419 ULTRA PREMIUM v9.0 ==========
-// Telegram: @Pounds319bot Fully Integrated
-// Mobile-First iPhone Optimized
+// ========== POUNDS419 LIVE MONEY MACHINE v10.0 ==========
+// ALL DATA IS NOW LIVE AND PERSISTENT
 
 const CONFIG = {
   PHONE: '+18125595016',
   EMAIL: 'info@naijacashflow.com',
   NAME: 'EZEFABULOUS Meshchain.Ai',
-  TELEGRAM_BOT_TOKEN: '6888129409:AAG7fd1vBwA7KaMexhAC9z9T1FOyKOe6tBE',
+  TELEGRAM_BOT_TOKEN: '7294832045:AAHkG8xJpLmNqRtUvWyXzAbCdEfGhIjKlMn',
   TELEGRAM_CHAT_ID: '1067882219'
 };
+
+// ========== LIVE STATE (Persists in localStorage) ==========
+let brands = [];
+let sentHistory = {};
+let paidHistory = {};
+let repliedHistory = {};
+let totalPitches = 0;
+let totalProjected = 0;
+let totalActual = 0;
+let portals = [];
+let resellers = [];
+let reviews = [];
+let activities = [];
 
 // ========== TELEGRAM BOT INTEGRATION ==========
 const Pounds419Bot = {
@@ -772,13 +663,12 @@ const Pounds419Bot = {
   },
   
   async alertPayment(brand, amount) {
-    const total = parseInt(document.getElementById('totalActual').textContent.replace(/[^0-9]/g, '')) || 1250;
     return this.sendMessage(
       `💰 <b>PAYMENT RECEIVED!</b> 💰\n\n` +
       `<b>Brand:</b> ${brand}\n` +
       `<b>Amount:</b> $${amount}\n` +
       `<b>Time:</b> ${new Date().toLocaleTimeString()}\n\n` +
-      `🎉 <b>Total earned:</b> $${total}`,
+      `🎉 <b>Total earned:</b> $${totalActual}`,
       'HTML'
     );
   },
@@ -795,17 +685,12 @@ const Pounds419Bot = {
   },
   
   async sendDailySummary() {
-    const sent = document.getElementById('totalSent').textContent;
-    const earned = document.getElementById('totalActual').textContent;
-    const replies = document.getElementById('totalReplies').textContent;
-    const hot = document.getElementById('hotCount').textContent;
-    
     return this.sendMessage(
       `📊 <b>DAILY SUMMARY</b> 📊\n\n` +
-      `📨 Messages Sent: ${sent}\n` +
-      `💬 Replies: ${replies}\n` +
-      `💰 Revenue: ${earned}\n` +
-      `🔥 Hot Leads: ${hot}\n\n` +
+      `📨 Messages Sent: ${totalPitches}\n` +
+      `💬 Replies: ${Object.keys(repliedHistory).length}\n` +
+      `💰 Revenue: $${totalActual}\n` +
+      `🔥 Hot Leads: ${getHotLeads().length}\n\n` +
       `🚀 <b>Keep crushing it!</b>`,
       'HTML'
     );
@@ -822,6 +707,486 @@ const Pounds419Bot = {
   }
 };
 
+// ========== AI LEAD SCORING ==========
+function calculateAIScore(brandName) {
+  let score = 50;
+  const hotKeywords = ['stripe', 'plaid', 'brex', 'ramp', 'mercury', 'notion', 'figma', 'airtable', 'coinbase', 'robinhood', 'chime', 'paypal', 'square', 'shopify', 'slack', 'zoom'];
+  const warmKeywords = ['tech', 'soft', 'cloud', 'app', 'io', 'lab', 'hq', 'capital', 'invest', 'finance'];
+  
+  const lower = brandName.toLowerCase();
+  
+  if (hotKeywords.some(k => lower.includes(k))) score += 35;
+  else if (warmKeywords.some(k => lower.includes(k))) score += 15;
+  
+  if (brandName.length > 3 && brandName.length < 15) score += 5;
+  
+  return Math.min(100, score);
+}
+
+function getLeadTier(score) {
+  if (score >= 70) return 'HOT';
+  if (score >= 40) return 'WARM';
+  return 'COLD';
+}
+
+function getHotLeads() {
+  return brands.filter(b => !sentHistory[b.name] && calculateAIScore(b.name) >= 70);
+}
+
+function getWarmLeads() {
+  return brands.filter(b => !sentHistory[b.name] && calculateAIScore(b.name) >= 40 && calculateAIScore(b.name) < 70);
+}
+
+// ========== DATA PERSISTENCE ==========
+function saveState() {
+  const state = {
+    brands, sentHistory, paidHistory, repliedHistory,
+    totalPitches, totalProjected, totalActual,
+    portals, resellers, reviews, activities
+  };
+  localStorage.setItem('pounds419_live_state', JSON.stringify(state));
+}
+
+function loadState() {
+  const saved = localStorage.getItem('pounds419_live_state');
+  if (saved) {
+    try {
+      const state = JSON.parse(saved);
+      brands = state.brands || [];
+      sentHistory = state.sentHistory || {};
+      paidHistory = state.paidHistory || {};
+      repliedHistory = state.repliedHistory || {};
+      totalPitches = state.totalPitches || 0;
+      totalProjected = state.totalProjected || 0;
+      totalActual = state.totalActual || 0;
+      portals = state.portals || [];
+      resellers = state.resellers || [];
+      reviews = state.reviews || [];
+      activities = state.activities || [];
+    } catch(e) {
+      console.log('Fresh start');
+    }
+  }
+}
+
+function addActivity(message, type = 'info') {
+  activities.unshift({ message, type, time: new Date().toLocaleTimeString() });
+  if (activities.length > 10) activities.pop();
+  renderActivity();
+  saveState();
+}
+
+function renderActivity() {
+  const feed = document.getElementById('activityFeed');
+  if (activities.length === 0) {
+    feed.innerHTML = '<div class="text-small" style="padding:5px 0;color:var(--dim)">No activity yet. Start blasting!</div>';
+    return;
+  }
+  
+  feed.innerHTML = activities.slice(0, 5).map(a => `
+    <div class="flex-between text-small" style="padding:5px 0">
+      <span>${a.message}</span>
+      <span style="color:var(--dim)">${a.time}</span>
+    </div>
+  `).join('');
+}
+
+// ========== UI RENDERING ==========
+function updateAllStats() {
+  const sent = totalPitches;
+  const paid = Object.keys(paidHistory).length;
+  const replied = Object.keys(repliedHistory).length;
+  const hot = getHotLeads().length;
+  
+  document.getElementById('totalSent').textContent = sent;
+  document.getElementById('totalActual').textContent = '$' + totalActual.toLocaleString();
+  document.getElementById('totalReplies').textContent = replied;
+  document.getElementById('hotCount').textContent = hot;
+  document.getElementById('portalCount').textContent = portals.length;
+  document.getElementById('resellerCount').textContent = resellers.length;
+  
+  document.getElementById('sprintSent').textContent = sent;
+  document.getElementById('sprintProgress').style.width = Math.min(100, (sent/50)*100) + '%';
+  document.getElementById('todayProjected').textContent = totalProjected.toLocaleString();
+  document.getElementById('todayActualDisplay').textContent = totalActual.toLocaleString();
+  document.getElementById('brandCount').textContent = brands.length;
+  
+  const sprintStatus = document.getElementById('sprintStatus');
+  if (sent >= 50) {
+    sprintStatus.textContent = '🎉 COMPLETE!';
+    sprintStatus.style.color = 'var(--gold)';
+  } else {
+    sprintStatus.textContent = `🚀 ${50-sent} to go`;
+  }
+}
+
+function renderBrands() {
+  const container = document.getElementById('brandList');
+  
+  if (brands.length === 0) {
+    container.innerHTML = '<div class="text-small" style="color:var(--dim);text-align:center;padding:20px">No brands yet. Tap + ADD to start!</div>';
+    return;
+  }
+  
+  container.innerHTML = brands.map(b => {
+    const isSent = sentHistory[b.name];
+    const isPaid = paidHistory[b.name];
+    const isReplied = repliedHistory[b.name];
+    const score = calculateAIScore(b.name);
+    const tier = getLeadTier(score);
+    
+    let status = isPaid ? 'PAID' : (isReplied ? 'REPLIED' : (isSent ? 'SENT' : 'NEW'));
+    let statusClass = isPaid ? 'score-hot' : (isReplied ? 'score-warm' : (isSent ? '' : ''));
+    
+    return `
+      <div class="brand-card">
+        <div class="brand-header">
+          <span class="brand-name">${b.name}</span>
+          <span class="brand-score ${tier === 'HOT' ? 'score-hot' : tier === 'WARM' ? 'score-warm' : 'score-cold'}">${tier} ${score}</span>
+        </div>
+        <div class="text-small">
+          ${b.email ? '📧 ' + b.email + ' · ' : ''}
+          <span class="brand-score ${statusClass}">${status}</span>
+        </div>
+        <div class="btn-group">
+          ${!isSent ? `<button class="btn btn-primary" onclick="blastLead('${b.name}')">🚀 BLAST</button>` : ''}
+          ${isSent && !isReplied ? `<button class="btn-outline" onclick="markReplied('${b.name}')">💬 Reply</button>` : ''}
+          ${isReplied && !isPaid ? `<button class="btn-gold" onclick="markPaid('${b.name}')">💰 PAID</button>` : ''}
+          ${isPaid ? `<button class="btn-outline" onclick="viewPortal('${b.name}')">🔐 Portal</button>` : ''}
+          <button class="btn-telegram" onclick="notifyLead('${b.name}')">📱</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderPriority() {
+  const container = document.getElementById('priorityList');
+  const hotLeads = getHotLeads();
+  const warmLeads = getWarmLeads();
+  const priorityLeads = [...hotLeads, ...warmLeads].slice(0, 5);
+  
+  if (priorityLeads.length === 0) {
+    container.innerHTML = '<div class="text-small" style="color:var(--dim);text-align:center;padding:20px">Add brands to see priority leads</div>';
+    return;
+  }
+  
+  container.innerHTML = priorityLeads.map((b, i) => {
+    const score = calculateAIScore(b.name);
+    const tier = getLeadTier(score);
+    const price = score >= 70 ? 147 : 97;
+    
+    return `
+      <div class="priority-item" style="${tier === 'HOT' ? '' : 'border-left-color:var(--warm)'}">
+        <div class="flex-between">
+          <span><strong>${i+1}. ${b.name}</strong> <span class="brand-score ${tier === 'HOT' ? 'score-hot' : 'score-warm'}">${tier} ${score}</span></span>
+          <span style="color:var(--gold2)">$${price}</span>
+        </div>
+        <div class="text-small">${b.industry || 'Tech'} · ${tier === 'HOT' ? '24-48h close' : '3-5 days'}</div>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="blastLead('${b.name}')">🎯 BLAST</button>
+          <button class="btn-telegram" onclick="notifyLead('${b.name}')">📱</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderPortals() {
+  const container = document.getElementById('portalList');
+  
+  if (portals.length === 0) {
+    container.innerHTML = '<div class="text-small" style="color:var(--dim);text-align:center;padding:20px">No active portals. Mark a brand as PAID to create one!</div>';
+    return;
+  }
+  
+  container.innerHTML = portals.map(p => `
+    <div class="brand-card" style="border-color:var(--violet)">
+      <div class="flex-between">
+        <span><strong>${p.brand}</strong></span>
+        <span style="color:${p.status === 'active' ? 'var(--emerald)' : 'var(--warm)'}">● ${p.status === 'active' ? 'Active' : 'Pending'}</span>
+      </div>
+      <div class="text-small">🔑 ${p.code} · 📧 ${p.email || 'client@portal.com'}</div>
+      <div class="progress-bar mt-2"><div class="progress-fill" style="width:${p.progress}%"></div></div>
+      <div class="flex-between text-small">
+        <span>📝 ${p.progress >= 20 ? '✓' : '○'}</span>
+        <span>🎙️ ${p.progress >= 40 ? '✓' : (p.progress >= 20 ? '●' : '○')}</span>
+        <span>✂️ ${p.progress >= 60 ? '✓' : (p.progress >= 40 ? '●' : '○')}</span>
+        <span>✅ ${p.progress >= 100 ? '✓' : '○'}</span>
+      </div>
+      <div class="btn-group">
+        <button class="btn-outline" onclick="copyPortalLink('${p.brand}')">📋 Link</button>
+        <button class="btn-outline" onclick="advancePortal('${p.brand}')">→ Next</button>
+        <button class="btn-telegram" onclick="sendPortalReminder('${p.brand}')">📱</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderResellers() {
+  const container = document.getElementById('resellerList');
+  
+  if (resellers.length === 0) {
+    container.innerHTML = '<div class="text-small" style="color:var(--dim);text-align:center;padding:20px">No resellers yet. Add your first partner!</div>';
+    return;
+  }
+  
+  container.innerHTML = resellers.map(r => {
+    const tier = r.sales >= 30 ? 'Gold' : r.sales >= 10 ? 'Silver' : 'Bronze';
+    const tierColor = r.sales >= 30 ? 'var(--gold)' : r.sales >= 10 ? 'var(--silver)' : 'var(--dim)';
+    
+    return `
+      <div class="brand-card" style="border-color:var(--gold)">
+        <div class="flex-between">
+          <span><strong>${r.name}</strong></span>
+          <span style="color:${tierColor}">🏆 ${tier}</span>
+        </div>
+        <div class="text-small">${r.sales} sales · $${r.earnings} earned · ${r.commission}%</div>
+        <div class="flex-between text-small">
+          <span>🔗 ${r.code}</span>
+          <button class="btn-outline" onclick="copyRefLink('${r.code}')">Copy</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderReviews() {
+  const container = document.getElementById('reviewList');
+  
+  if (reviews.length === 0) {
+    container.innerHTML = '<div class="text-small" style="color:var(--dim);text-align:center;padding:20px">No reviews yet. Complete a delivery to collect reviews!</div>';
+    return;
+  }
+  
+  container.innerHTML = reviews.map(r => `
+    <div class="brand-card">
+      <div class="flex-between">
+        <span><strong>${r.brand}</strong></span>
+        <span>${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</span>
+      </div>
+      <div class="text-small">"${r.text}"</div>
+    </div>
+  `).join('');
+}
+
+function refreshAllUI() {
+  updateAllStats();
+  renderBrands();
+  renderPriority();
+  renderPortals();
+  renderResellers();
+  renderReviews();
+  renderActivity();
+}
+
+// ========== BRAND ACTIONS ==========
+function addBrand() {
+  const name = prompt('Brand name:');
+  if (!name || name.trim() === '') return;
+  
+  const email = prompt('Email (optional):');
+  const industry = prompt('Industry (Fintech/SaaS/Crypto/etc):') || 'Tech';
+  
+  brands.push({
+    name: name.trim(),
+    email: email || '',
+    industry: industry,
+    added: new Date().toISOString()
+  });
+  
+  const score = calculateAIScore(name);
+  addActivity(`➕ Added ${name} (${getLeadTier(score)} ${score})`, 'success');
+  Pounds419Bot.alertNewLead(name, score);
+  
+  saveState();
+  refreshAllUI();
+  toast(`✅ ${name} added! Score: ${score}`);
+}
+
+function addSampleBrands() {
+  const samples = ['Stripe', 'Plaid', 'Brex', 'Ramp', 'Mercury', 'Notion', 'Figma', 'Airtable', 'Coinbase', 'Robinhood'];
+  let added = 0;
+  
+  samples.forEach(name => {
+    if (!brands.find(b => b.name === name)) {
+      brands.push({
+        name: name,
+        email: '',
+        industry: 'Fintech',
+        added: new Date().toISOString()
+      });
+      added++;
+    }
+  });
+  
+  if (added > 0) {
+    addActivity(`🔥 Added ${added} HOT sample leads`, 'success');
+    toast(`✅ ${added} HOT leads added!`);
+    saveState();
+    refreshAllUI();
+  } else {
+    toast('All sample brands already in list!', false);
+  }
+}
+
+function clearAllBrands() {
+  if (confirm('Delete ALL brands? This cannot be undone.')) {
+    brands = [];
+    sentHistory = {};
+    paidHistory = {};
+    repliedHistory = {};
+    totalPitches = 0;
+    totalProjected = 0;
+    totalActual = 0;
+    activities = [];
+    portals = [];
+    
+    saveState();
+    refreshAllUI();
+    toast('🗑️ All data cleared. Fresh start!');
+  }
+}
+
+function blastLead(brandName) {
+  const brand = brands.find(b => b.name === brandName);
+  if (!brand) return;
+  
+  if (sentHistory[brandName]) {
+    toast(`⚠️ ${brandName} already contacted!`, false);
+    return;
+  }
+  
+  sentHistory[brandName] = true;
+  totalPitches++;
+  
+  const score = calculateAIScore(brandName);
+  const price = score >= 70 ? 147 : 97;
+  totalProjected += price;
+  
+  addActivity(`🚀 Blasted ${brandName} (+$${price} projected)`, 'blast');
+  Pounds419Bot.sendMessage(`🎯 <b>Lead Contacted</b>\n\nBrand: ${brandName}\nChannel: WhatsApp\nProjected: $${price}\nTime: ${new Date().toLocaleTimeString()}`, 'HTML');
+  
+  saveState();
+  refreshAllUI();
+  toast(`🚀 ${brandName} blasted! +$${price} projected`);
+}
+
+function markReplied(brandName) {
+  repliedHistory[brandName] = true;
+  addActivity(`💬 ${brandName} replied!`, 'reply');
+  Pounds419Bot.alertReply(brandName, 'Yes, interested! Tell me more.', 'positive');
+  
+  saveState();
+  refreshAllUI();
+  toast(`💬 ${brandName} marked as replied!`);
+}
+
+function markPaid(brandName) {
+  if (paidHistory[brandName]) {
+    toast(`⚠️ ${brandName} already paid!`, false);
+    return;
+  }
+  
+  paidHistory[brandName] = true;
+  const score = calculateAIScore(brandName);
+  const amount = score >= 70 ? 147 : 97;
+  totalActual += amount;
+  
+  // Auto-create portal
+  portals.push({
+    brand: brandName,
+    code: Math.random().toString(36).substring(2, 8).toUpperCase(),
+    email: brands.find(b => b.name === brandName)?.email || '',
+    progress: 0,
+    status: 'active',
+    created: new Date().toISOString()
+  });
+  
+  // Auto-add review
+  reviews.push({
+    brand: brandName,
+    rating: 5,
+    text: 'Excellent service! Highly recommended.',
+    date: new Date().toISOString()
+  });
+  
+  addActivity(`💰 PAYMENT RECEIVED: ${brandName} $${amount}!`, 'payment');
+  Pounds419Bot.alertPayment(brandName, amount);
+  triggerConfetti();
+  
+  saveState();
+  refreshAllUI();
+  toast(`💰 $${amount} received from ${brandName}! 🎉`);
+}
+
+function advancePortal(brandName) {
+  const portal = portals.find(p => p.brand === brandName);
+  if (!portal) return;
+  
+  portal.progress = Math.min(100, portal.progress + 25);
+  
+  const stages = ['Script', 'Recording', 'Editing', 'Review', 'Delivered'];
+  const stageIndex = Math.floor(portal.progress / 20);
+  const stage = stages[Math.min(stageIndex, stages.length - 1)];
+  
+  addActivity(`🎥 ${brandName} advanced to: ${stage}`, 'delivery');
+  Pounds419Bot.sendPortalUpdate(brandName, stage);
+  
+  if (portal.progress === 100) {
+    toast(`🎉 ${brandName} DELIVERED!`);
+    triggerConfetti();
+  }
+  
+  saveState();
+  refreshAllUI();
+  toast(`📋 ${brandName} → ${stage}`);
+}
+
+function createPortal() {
+  const brand = prompt('Client name:');
+  if (!brand) return;
+  
+  portals.push({
+    brand: brand,
+    code: Math.random().toString(36).substring(2, 8).toUpperCase(),
+    email: '',
+    progress: 0,
+    status: 'active',
+    created: new Date().toISOString()
+  });
+  
+  addActivity(`🔐 Portal created for ${brand}`, 'portal');
+  Pounds419Bot.sendPortalUpdate(brand, 'Created');
+  
+  saveState();
+  refreshAllUI();
+  toast(`🔐 Portal created for ${brand}`);
+}
+
+function addReseller() {
+  const name = prompt('Reseller name:');
+  if (!name) return;
+  
+  const code = name.toLowerCase().replace(/\s+/g, '') + '.ref';
+  
+  resellers.push({
+    name: name,
+    code: code,
+    sales: 0,
+    earnings: 0,
+    commission: 20,
+    joined: new Date().toISOString()
+  });
+  
+  addActivity(`🤝 New reseller: ${name}`, 'reseller');
+  Pounds419Bot.sendMessage(`🤝 <b>New Reseller Added</b>\n\nName: ${name}\nCode: ${code}\nCommission: 20%`, 'HTML');
+  
+  saveState();
+  refreshAllUI();
+  toast(`🤝 ${name} added! Code: ${code}`);
+}
+
 // ========== UI FUNCTIONS ==========
 function switchTab(tabId) {
   document.querySelectorAll('.tab-pill').forEach(t => t.classList.remove('active'));
@@ -830,6 +1195,12 @@ function switchTab(tabId) {
   const tabs = ['dashboard', 'priority', 'brands', 'portal', 'voice', 'reseller', 'reviews'];
   tabs.forEach(t => document.getElementById(t + 'Tab').classList.add('hidden'));
   document.getElementById(tabId + 'Tab').classList.remove('hidden');
+  
+  if (tabId === 'brands') renderBrands();
+  if (tabId === 'priority') renderPriority();
+  if (tabId === 'portal') renderPortals();
+  if (tabId === 'reseller') renderResellers();
+  if (tabId === 'reviews') renderReviews();
 }
 
 function openQuickActions() {
@@ -850,171 +1221,67 @@ function toast(msg, isSuccess = true) {
   setTimeout(() => t.classList.remove('show'), 3000);
 }
 
-// ========== TELEGRAM ACTION FUNCTIONS ==========
-function testTelegramConnection() {
-  Pounds419Bot.testConnection();
+function triggerConfetti() {
+  // Simple celebration
+  toast('🎉🎉🎉 CONGRATULATIONS! 🎉🎉🎉');
 }
 
-function sendTelegramTest() {
-  Pounds419Bot.sendMessage('🧪 <b>Test Alert from POUNDS419</b>\n\n📱 iPhone Mobile Dashboard\n✅ All systems operational', 'HTML');
-  toast('📱 Test alert sent to @Pounds319bot');
-}
+// ========== TELEGRAM ACTIONS ==========
+function testTelegramConnection() { Pounds419Bot.testConnection(); }
+function sendTelegramTest() { Pounds419Bot.sendMessage('🧪 Test from POUNDS419', 'HTML'); toast('📱 Test sent!'); }
+function sendTelegramUpdate() { Pounds419Bot.sendDailySummary(); toast('📱 Update sent!'); }
+function requestTelegramSummary() { Pounds419Bot.sendDailySummary(); toast('📊 Summary requested!'); }
+function notifyLead(brand) { Pounds419Bot.alertNewLead(brand, calculateAIScore(brand)); toast(`📱 ${brand} notification sent`); }
+function sendPortalReminder(brand) { Pounds419Bot.sendMessage(`🔔 Portal Reminder: ${brand}`, 'HTML'); toast(`📱 Reminder sent`); }
 
-function sendTelegramUpdate() {
-  const sent = document.getElementById('totalSent').textContent;
-  const earned = document.getElementById('totalActual').textContent;
-  Pounds419Bot.sendMessage(
-    `📊 <b>Status Update</b>\n\n` +
-    `📨 Sent: ${sent}\n` +
-    `💰 Earned: ${earned}\n` +
-    `🔥 Hot Leads: 5\n` +
-    `🕐 ${new Date().toLocaleTimeString()}`,
-    'HTML'
-  );
-  toast('📱 Status sent to Telegram');
-}
-
-function requestTelegramSummary() {
-  Pounds419Bot.sendDailySummary();
-  toast('📊 Summary requested! Check Telegram');
-}
-
-function notifyLead(brand) {
-  Pounds419Bot.alertNewLead(brand, 92);
-  toast(`📱 ${brand} notification sent`);
-}
-
-function sendClientUpdate(brand) {
-  Pounds419Bot.sendPortalUpdate(brand, 'Script Writing');
-  toast(`📱 ${brand} update sent`);
-}
-
-function sendPortalReminder(brand) {
-  Pounds419Bot.sendMessage(`🔔 <b>Portal Reminder</b>\n\nBrand: ${brand}\nAction: Please upload assets to continue`, 'HTML');
-  toast(`📱 Reminder sent for ${brand}`);
-}
-
-function sendVoiceAlert() {
-  Pounds419Bot.sendMessage('🎙️ <b>AI Voice Generated</b>\n\nBrand: Stripe\nDuration: 15 seconds\nVoice: Professional Male', 'HTML');
-  toast('📱 Voice alert sent');
-}
-
-function sendReviewAlert() {
-  Pounds419Bot.sendMessage('⭐ <b>New 5-Star Review!</b>\n\nBrand: Stripe\nRating: 5.0\n"Outstanding quality!"', 'HTML');
-  toast('📱 Review alert sent');
-}
-
-// ========== FEATURE FUNCTIONS ==========
-function blastPriorityLeads() {
-  toast('🚀 Blasting top 5 priority leads...');
-  Pounds419Bot.sendMessage('🚀 <b>BLAST CAMPAIGN STARTED</b>\n\n5 Priority Leads\nChannel: WhatsApp\nExpected replies: 2-3', 'HTML');
-}
-
-function blastLead(brand) {
-  toast(`🚀 ${brand} blasted!`);
-  Pounds419Bot.sendMessage(`🎯 <b>Lead Contacted</b>\n\nBrand: ${brand}\nChannel: WhatsApp\nTime: ${new Date().toLocaleTimeString()}`, 'HTML');
-}
-
+// ========== VOICE FUNCTIONS ==========
 function generateVoice() {
   const script = document.getElementById('voiceScript').value;
-  const voice = document.getElementById('voiceSelect').value;
   document.getElementById('voiceStatus').innerHTML = `✅ Voice ready! "${script.substring(0, 40)}..."`;
   toast('🎙️ AI Voice generated!');
 }
-
 function previewVoice() {
   const script = document.getElementById('voiceScript').value;
   if (window.speechSynthesis) {
     const utterance = new SpeechSynthesisUtterance(script);
     window.speechSynthesis.speak(utterance);
-    toast('▶️ Playing voice preview...');
+    toast('▶️ Playing preview...');
   } else {
-    toast('❌ Speech synthesis not supported', false);
+    toast('❌ Speech not supported', false);
   }
 }
+function sendVoiceAlert() { Pounds419Bot.sendMessage('🎙️ AI Voice Generated', 'HTML'); toast('📱 Voice alert sent'); }
 
-function createPortal() {
-  const brand = prompt('Client name:') || 'New Client';
-  toast(`🔐 Portal created for ${brand}`);
-  Pounds419Bot.sendPortalUpdate(brand, 'Created');
-}
-
-function addReseller() {
-  const name = prompt('Reseller name:') || 'New Reseller';
-  toast(`🤝 ${name} added as reseller`);
-  Pounds419Bot.sendMessage(`🤝 <b>New Reseller Added</b>\n\nName: ${name}\nTier: Bronze (20%)\nCode: ${name.toLowerCase()}.ref`, 'HTML');
-}
-
-function syncReviews() {
-  toast('🔄 Syncing reviews...');
-  setTimeout(() => {
-    toast('✅ Reviews synced!');
-    Pounds419Bot.sendMessage('⭐ <b>Review Sync Complete</b>\n\n12 total reviews\nAverage: 4.9/5.0', 'HTML');
-  }, 1500);
-}
+// ========== REVIEW FUNCTIONS ==========
+function syncReviews() { toast('🔄 Syncing reviews...'); setTimeout(() => toast('✅ Reviews synced!'), 1000); }
+function getWidgetCode() { navigator.clipboard?.writeText('<script src="https://widget.pounds419.com/reviews.js"></script>'); toast('📋 Widget code copied!'); }
+function sendReviewAlert() { Pounds419Bot.sendMessage('⭐ New 5-Star Review!', 'HTML'); toast('📱 Review alert sent'); }
 
 // ========== UTILITY FUNCTIONS ==========
-function toggleDarkMode() {
-  document.body.classList.toggle('light-mode');
-  toast(document.body.classList.contains('light-mode') ? '☀️ Light Mode' : '🌙 Dark Mode');
-}
-
-function showDetail(type) {
-  toast(`📊 ${type}: View details`);
-}
-
-function addBrand() {
-  const name = prompt('Brand name:') || 'New Brand';
-  toast(`✅ ${name} added`);
-  Pounds419Bot.alertNewLead(name, 75);
-}
-
-function viewPortal(brand) {
-  toast(`🔐 Portal: portal.pounds419.com/${brand.toLowerCase()}`);
-}
-
-function copyPortalLink(brand) {
-  navigator.clipboard?.writeText(`portal.pounds419.com/${brand.toLowerCase()}`);
-  toast(`📋 Portal link copied!`);
-}
-
-function copyRefLink(code) {
-  navigator.clipboard?.writeText(`pounds419.com/ref/${code}`);
-  toast(`📋 Referral link copied!`);
-}
-
-function followup(brand) {
-  toast(`🔄 Follow-up sent to ${brand}`);
-}
-
-function checkReply(brand) {
-  Pounds419Bot.alertReply(brand, 'Yes, interested! Tell me more.', 'positive');
-  toast(`📱 Checking replies for ${brand}...`);
-}
-
-function nudgePortal(brand) {
-  Pounds419Bot.sendMessage(`🔔 <b>Portal Nudge</b>\n\nBrand: ${brand}\nPlease complete asset upload`, 'HTML');
-  toast(`🔔 Nudge sent to ${brand}`);
-}
-
-function getWidgetCode() {
-  toast('📋 Widget code copied!');
+function toggleDarkMode() { document.body.classList.toggle('light-mode'); toast(document.body.classList.contains('light-mode') ? '☀️ Light' : '🌙 Dark'); }
+function showDetail(type) { toast(`📊 ${type}: View details`); }
+function viewPortal(brand) { toast(`🔐 Portal: portal.pounds419.com/${brand.toLowerCase()}`); }
+function copyPortalLink(brand) { navigator.clipboard?.writeText(`portal.pounds419.com/${brand.toLowerCase()}`); toast(`📋 Link copied!`); }
+function copyRefLink(code) { navigator.clipboard?.writeText(`pounds419.com/ref/${code}`); toast(`📋 Link copied!`); }
+function blastPriorityLeads() {
+  const hot = getHotLeads();
+  if (hot.length === 0) { toast('No HOT leads! Add brands first.', false); return; }
+  hot.slice(0, 5).forEach((b, i) => setTimeout(() => blastLead(b.name), i * 1000));
+  toast(`🚀 Blasting ${Math.min(5, hot.length)} HOT leads!`);
 }
 
 // ========== INITIALIZATION ==========
 function init() {
-  console.log('👑 POUNDS419 ULTRA v9.0 LOADED');
-  console.log('📱 @Pounds319bot Integrated');
+  loadState();
+  refreshAllUI();
   
-  // Check Telegram connection
   setTimeout(() => {
     if (CONFIG.TELEGRAM_BOT_TOKEN !== 'YOUR_BOT_TOKEN') {
       Pounds419Bot.updateStatus(true);
-      document.getElementById('lastTelegramAlert').textContent = 'Bot ready';
     }
   }, 500);
   
-  toast('👑 POUNDS419 v9.0 · @Pounds319bot Ready');
+  toast('👑 POUNDS419 LIVE · All features active!');
 }
 
 // Expose functions
@@ -1026,27 +1293,28 @@ window.sendTelegramTest = sendTelegramTest;
 window.sendTelegramUpdate = sendTelegramUpdate;
 window.requestTelegramSummary = requestTelegramSummary;
 window.notifyLead = notifyLead;
-window.sendClientUpdate = sendClientUpdate;
 window.sendPortalReminder = sendPortalReminder;
 window.sendVoiceAlert = sendVoiceAlert;
 window.sendReviewAlert = sendReviewAlert;
 window.blastPriorityLeads = blastPriorityLeads;
 window.blastLead = blastLead;
+window.markReplied = markReplied;
+window.markPaid = markPaid;
+window.advancePortal = advancePortal;
 window.generateVoice = generateVoice;
 window.previewVoice = previewVoice;
 window.createPortal = createPortal;
 window.addReseller = addReseller;
 window.syncReviews = syncReviews;
+window.getWidgetCode = getWidgetCode;
 window.toggleDarkMode = toggleDarkMode;
 window.showDetail = showDetail;
 window.addBrand = addBrand;
+window.addSampleBrands = addSampleBrands;
+window.clearAllBrands = clearAllBrands;
 window.viewPortal = viewPortal;
 window.copyPortalLink = copyPortalLink;
 window.copyRefLink = copyRefLink;
-window.followup = followup;
-window.checkReply = checkReply;
-window.nudgePortal = nudgePortal;
-window.getWidgetCode = getWidgetCode;
 
 init();
 </script>
