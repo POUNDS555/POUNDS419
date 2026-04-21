@@ -681,12 +681,12 @@ body{
 // Telegram: @Pounds319bot Fully Integrated
 // Mobile-First iPhone Optimized
 
-const CONFIG = {
+const const CONFIG = {
   PHONE: '+18125595016',
-  EMAIL: 'ochu@naijacashflow.com',
-  NAME: 'OCHU SUNDAY EZEMEKE',
-  TELEGRAM_BOT_TOKEN: 'YOUR_BOT_TOKEN', // Replace with your token from @BotFather
-  TELEGRAM_CHAT_ID: 'YOUR_CHAT_ID'       // Replace with your chat ID from @userinfobot
+  EMAIL: 'info@naijacashflow.com',
+  NAME: 'EZEFABULOUS Meshchain.Ai',
+  TELEGRAM_BOT_TOKEN: '7294832045:AAHkG8xJpLmNqRtUvWyXzAbCdEfGhIjKlMn',
+  TELEGRAM_CHAT_ID: '1067882219'
 };
 
 // ========== TELEGRAM BOT INTEGRATION ==========
@@ -722,8 +722,7 @@ const Pounds419Bot = {
         this.connected = true;
         this.lastAlert = new Date();
         this.updateStatus(true);
-        document.getElementById('lastTelegramAlert').textContent = `Last alert: ${new Date().toLocaleTimeString()}`;
-        console.log('✅ Telegram sent:', message.substring(0, 50));
+        console.log('✅ Telegram sent');
         return true;
       } else {
         console.error('Telegram error:', data);
@@ -740,31 +739,23 @@ const Pounds419Bot = {
   updateStatus(connected) {
     const dot = document.getElementById('telegramDot');
     const text = document.getElementById('telegramText');
-    if (connected) {
-      dot.style.background = 'var(--emerald)';
-      text.textContent = 'CONNECTED';
-    } else {
-      dot.style.background = 'var(--crimson)';
-      text.textContent = 'DISCONNECTED';
+    if (dot && text) {
+      dot.style.background = connected ? '#22c55e' : '#ef4444';
+      text.textContent = connected ? 'CONNECTED' : 'DISCONNECTED';
     }
+    document.getElementById('lastTelegramAlert').textContent = connected ? 'Ready to send alerts' : 'Configure Telegram';
   },
   
   async testConnection() {
-    toast('📱 Testing @Pounds319bot...');
-    const sent = await this.sendMessage(
-      '✅ <b>POUNDS419 v9.0 Online</b>\n\n' +
-      '📱 Mobile Dashboard Active\n' +
-      '🎯 System Ready\n' +
-      '💰 Tracking Active\n\n' +
-      '<i>Sent from iPhone</i>'
-    );
-    
+    const sent = await this.sendMessage('✅ <b>POUNDS419 Connected!</b>\n\n📱 Your money machine is online!\n🕐 ' + new Date().toLocaleTimeString());
     if (sent) {
-      toast('✅ Telegram connected! Check your messages');
+      toast('✅ Telegram connected! Check @Pounds319bot');
     } else {
-      toast('❌ Telegram connection failed. Check token.', false);
+      toast('❌ Telegram connection failed', false);
     }
-  },
+    return sent;
+  }
+};
   
   async alertReply(brand, message, sentiment) {
     const emoji = sentiment === 'positive' ? '🔥' : sentiment === 'neutral' ? '😐' : '❌';
